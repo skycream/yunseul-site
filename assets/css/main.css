@@ -192,6 +192,19 @@ p { color: var(--muted); max-width: 65ch; text-wrap: pretty; }
 .roster li { font-family: var(--display); font-weight: 700; font-size: 1.08rem; letter-spacing: -0.01em; }
 .roster li small { display: block; font-family: "Satoshi", sans-serif; color: var(--muted); font-weight: 400; font-size: 0.88rem; }
 
+/* ── 유닛 목록 (가용 현황) ─────────── */
+.units { margin-top: 3rem; max-width: 760px; display: grid; gap: 1rem; }
+.unit-row {
+  display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap;
+  background: var(--surface); border-radius: var(--r-card); padding: 1.25rem 1.6rem; box-shadow: var(--shadow-sm);
+}
+.unit-row .u-name { font-family: var(--display); font-weight: 700; font-size: 1.15rem; letter-spacing: -0.015em; }
+.unit-row .u-meta { color: var(--muted); font-size: 0.95rem; flex: 1; }
+.status { font-weight: 700; font-size: 0.85rem; padding: 0.4em 1em; border-radius: 999px; white-space: nowrap; }
+.status.available { background: var(--accent-soft); color: var(--accent-deep); }
+.status.leased { background: #eceff1; color: var(--muted); }
+.unit-row.is-leased { opacity: 0.72; }
+
 /* ── 2업 도면 그리드 ───────────────── */
 .duo { display: grid; grid-template-columns: 1fr 1fr; gap: 1.75rem; margin-top: 3rem; }
 .duo figure { margin: 0; }
