@@ -19,7 +19,7 @@
   var motionOK = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (motionOK && "IntersectionObserver" in window) {
     var targets = document.querySelectorAll(
-      "section h2, section .lede, .fact-card, .prop-card, .service, .process > div, .timeline > div, .evidence-points > div, .bignum, .gallery img, .duo figure, .map-wrap, .roster li, .prose h2, .prose ul, .form-grid .field"
+      "section h2, section .lede, .fact-card, .prop-card, .service, .process > div, .timeline > div, .evidence-points > div, .gallery img, .duo figure, .map-wrap, .roster li, .prose h2, .prose ul, .form-grid .field"
     );
     var groups = {};
     targets.forEach(function (el) {
