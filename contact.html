@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enquire About Commercial Space in Korea | Yunseul</title>
+  <meta name="description" content="Contact the owner directly about office space in Cheongju or retail space in Haeundae, Busan. Replies in English within one business day.">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="stylesheet" href="assets/css/main.css?v=8">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">Yunseul<span>.</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+    <ul class="nav-links" id="nav-menu">
+      <li><a href="cheongju.html">Cheongju</a></li>
+      <li><a href="busan.html">Busan Haeundae</a></li>
+      <li><a href="korea-setup-guide.html">Setup Guide</a></li>
+      <li><a class="btn" href="contact.html">Enquire</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-head">
+    <div class="container">
+      <h1>Tell us what your team needs.</h1>
+      <p class="lede">A few lines about your company, use case and timeline is enough. We reply in English within one business day.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <!-- FormSubmit: 배포 후 첫 제출 시 yunseul2025@gmail.com으로 활성화 확인 메일이 1회 발송됨. Activate 클릭 후부터 정상 수신 -->
+      <form class="enquiry form-grid" action="https://formsubmit.co/yunseul2025@gmail.com" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="New property enquiry from the website">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required autocomplete="name">
+          <span class="error">Please enter your name.</span>
+        </div>
+        <div class="field">
+          <label for="company">Company</label>
+          <input type="text" id="company" name="company" required autocomplete="organization">
+          <span class="error">Please enter your company name.</span>
+        </div>
+        <div class="field">
+          <label for="email">Work email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+          <span class="help">We reply to this address. No newsletters, ever.</span>
+          <span class="error">Please enter a valid email address.</span>
+        </div>
+        <div class="field">
+          <label for="interest">Location of interest</label>
+          <select id="interest" name="interest">
+            <option value="cheongju">Cheongju (office)</option>
+            <option value="busan">Busan Haeundae (retail / office)</option>
+            <option value="both">Both</option>
+            <option value="not-sure">Not sure yet</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label for="message">Your requirements</label>
+          <textarea id="message" name="message" rows="6" required placeholder=""></textarea>
+          <span class="help">Team size, intended use, target move-in date, anything else we should know.</span>
+          <span class="error">Please tell us briefly what you are looking for.</span>
+        </div>
+        <div class="field full">
+          <button class="btn" type="submit">Send enquiry</button>
+        </div>
+        <p class="form-note">
+          Prefer email? Write to us directly at <a class="text-link" href="mailto:yunseul2025@gmail.com?subject=Property%20enquiry%20(Cheongju%20%2F%20Busan)">yunseul2025@gmail.com</a>.
+          Your details are used only to answer this enquiry.
+        </p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div>
+      <p>Yunseul Co., Ltd. Busan, Republic of Korea.</p>
+      <p>&copy; <span data-year>2026</span> Yunseul. All rights reserved.</p>
+    </div>
+    <ul class="footer-links">
+      <li><a href="cheongju.html">Cheongju</a></li>
+      <li><a href="busan.html">Busan Haeundae</a></li>
+      <li><a href="korea-setup-guide.html">Setup Guide</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
